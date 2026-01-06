@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>장윤정 Portfolio</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- Topbar -->
+  <header class="topbar">
+    <a class="brand" href="#top">장윤정 포트폴리오</a>
+
+    <nav class="nav" id="nav">
+      <a href="#about">소개</a>
+      <a href="#resume">이력</a>
+      <a href="#skills">스킬</a>
+      <a href="#projects">프로젝트</a>
+      <a href="#contact">연락</a>
+    </nav>
+
+    <div class="topbar-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="테마 전환">🌓</button>
+      <button class="icon-btn" id="menuBtn" aria-label="메뉴 열기">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top">
+    <section class="container hero">
+      <div class="hero-left">
+        <p class="badge">Frontend ( React, HTML/CSS/JavaScript )</p>
+        <h1 class="title">
+          안녕하세요, <br />
+          <span class="accent">장윤정</span> 입니다.
+        </h1>
+        <p class="subtitle">
+          “작동하는 화면에서 멈추지 않고, 더 빠르고 나은 경험을 고민하는 신입 프론트엔드 개발자입니다.”
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">프로젝트 보기</a>
+          <a class="btn" href="#contact">연락하기</a>
+          <a class="btn ghost" href="./assets/장윤정.pdf" download>이력서 PDF</a>
+        </div>
+
+        <div class="quick">
+          <div class="quick-item">
+            <div class="quick-k">Email</div>
+            <div class="quick-v">yunjeong7222@gmail.com</div>
+          </div>
+          <div class="quick-item">
+            <div class="quick-k">GitHub</div>
+            <div class="quick-v"><a href="https://github.com/yunjeong7222" target="_blank" rel="noreferrer">github.com/yourid</a></div>
+          </div>
+          <div class="quick-item">
+            <div class="quick-k">Blog</div>
+            <div class="quick-v"><a href="" target="_blank" rel="noreferrer">yourblog.com</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <figure class="profile-card">
+          <!-- 증명사진: assets/profile.jpg 로 교체 -->
+          <img class="profile-img" src="./assets/profile.jpg" alt="OOO 증명사진" />
+          <figcaption class="profile-meta">
+            <div class="name">장윤정</div>
+            <div class="role">Software Developer</div>
+            <div class="chips">
+              <span class="chip">#JavaScript</span>
+              <span class="chip">#React</span>
+              <span class="chip">#HTML/CSS</span>
+              <span class="chip">#Python</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="container section" id="about">
+      <div class="section-head">
+        <h2>소개</h2>
+        <p>나의 강점과 성향을 3~5문장으로 정리해 주세요.</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>나는 이런 개발자입니다</h3>
+          <ul class="list">
+            <li>문제를 바로 구현하기보다, 왜 문제가 발생했는지를 먼저 정의하고 원인을 분석하는 과정을 중요하게 생각합니다.</li>
+            <li>협업 시에는 커뮤니케이션의 오해를 줄이기 위해 기록과 문서화를 꾸준히 실천하고 있습니다. </li>
+            <li>성능과 보안, 유지보수성을 고려한 구현을 통해 안정적인 사용자 경험을 제공하고자 합니다.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>관심 분야</h3>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag"></span>
+            <span class="tag"></span>
+            <span class="tag"></span>
+            <span class="tag"></span>
+            <span class="tag"></span>
+          </div>
+          <!-- <p class="muted">
+            팁: “최근에 집중적으로 공부한 것”을 위에 배치하면 인상이 좋아집니다.
+          </p> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section class="container section" id="resume">
+      <div class="section-head">
+        <h2>이력</h2>
+        <p>학력/교육/경력/자격을 타임라인으로 보여줍니다.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content card">
+            <div class="tl-top">
+              <strong>스마트인재개발원 - 프론트앤드 개발</strong>
+              <span class="muted">2025.11 ~ 2026.04</span>
+            </div>
+            <ul class="list">
+              <li>React, HTML/CSS/JavaScript 기반 웹 서비스 개발</li>
+              <li>각종 라이브러리, 프레임워크 이용한 구현 및 협업</li>
+              <li>팀 프로젝트 3회 수행</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content card">
+            <div class="tl-top">
+              <strong>광주대학교 컴퓨터공학과 졸업</strong>
+              <span class="muted">2014.03 ~ 2018.02</span>
+            </div>
+            <ul class="list">
+              <li>자료구조, 운영체제, 네트워크 등 전공 기초 학습</li>
+              <li>문제 해결 중심의 팀 프로젝트 다수 수행</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content card">
+            <div class="tl-top">
+              <strong>자격증</strong>
+              <span class="muted"></span>
+            </div>
+            <ul class="list">
+              <li>정보처리기사</li>
+              <li>기타</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="container section" id="skills">
+      <div class="section-head">
+        <h2>IT 언어 / 기술 스킬</h2>
+        <p>바(Progress)로 직관적으로 보여줍니다. (수치는 원하는 대로)</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Languages</h3>
+
+          <div class="skill">
+            <div class="skill-top">
+              <span>Java</span><span class="muted" data-skill-label>80%</span>
+            </div>
+            <div class="bar"><div class="bar-fill" data-skill="80"></div></div>
+            <p class="muted small">Spring, JPA/MyBatis, REST API</p>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top">
+              <span>Python</span><span class="muted" data-skill-label>75%</span>
+            </div>
+            <div class="bar"><div class="bar-fill" data-skill="75"></div></div>
+            <p class="muted small">Pandas, ML 기본, 자동화</p>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top">
+              <span>JavaScript</span><span class="muted" data-skill-label>70%</span>
+            </div>
+            <div class="bar"><div class="bar-fill" data-skill="70"></div></div>
+            <p class="muted small">DOM, Fetch, 기본 SPA 패턴</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Framework / Tools</h3>
+
+          <div class="tags">
+            <span class="tag">Spring Boot</span>
+            <span class="tag">JPA</span>
+            <span class="tag">MyBatis</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Oracle</span>
+            <span class="tag">Git/GitHub</span>
+            <span class="tag">Docker(기초)</span>
+            <span class="tag">CI/CD(기초)</span>
+          </div>
+
+          <div class="note">
+            <strong>한 줄 어필</strong>
+            <p class="muted">
+              “API 설계와 DB 모델링에 강점이 있으며, 배포/운영까지 경험을 확장 중입니다.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="container section" id="projects">
+      <div class="section-head">
+        <h2>프로젝트</h2>
+        <p>카드형 + 필터 버튼으로 보기 좋게 구성했습니다.</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">전체</button>
+        <button class="filter-btn" data-filter="web">WEB</button>
+        <button class="filter-btn" data-filter="backend">BACKEND</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+      </div>
+
+      <div class="cards" id="projectGrid">
+        <article class="card project" data-type="web backend">
+          <div class="project-top">
+            <h3>프로젝트 1: OOO 서비스</h3>
+            <span class="pill">팀</span>
+          </div>
+          <p class="muted">
+            한 줄 소개: 어떤 문제를 해결하는 서비스인지 짧게.
+          </p>
+          <ul class="list">
+            <li>담당: API 개발 / DB 설계</li>
+            <li>기술: Spring Boot, JPA, MySQL</li>
+            <li>성과: 응답속도 개선 00% (가능하면)</li>
+          </ul>
+          <div class="project-links">
+            <a class="btn small" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Demo</a>
+          </div>
+        </article>
+
+        <article class="card project" data-type="ai">
+          <div class="project-top">
+            <h3>프로젝트 2: OOO AI</h3>
+            <span class="pill">개인</span>
+          </div>
+          <p class="muted">
+            예: 이미지 분류/탐지, 추천, 예측 등.
+          </p>
+          <ul class="list">
+            <li>담당: 데이터 전처리 / 모델 학습</li>
+            <li>기술: Python, Pandas, (Framework)</li>
+            <li>성과: 정확도 00% (가능하면)</li>
+          </ul>
+          <div class="project-links">
+            <a class="btn small" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Report</a>
+          </div>
+        </article>
+
+        <article class="card project" data-type="web">
+          <div class="project-top">
+            <h3>프로젝트 3: 포트폴리오 사이트</h3>
+            <span class="pill">개인</span>
+          </div>
+          <p class="muted">
+            반응형, 다크모드, 프로젝트 필터 구현.
+          </p>
+          <ul class="list">
+            <li>담당: UI 구성 / 인터랙션</li>
+            <li>기술: HTML, CSS, JS</li>
+          </ul>
+          <div class="project-links">
+            <a class="btn small" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Live</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="container section" id="contact">
+      <div class="section-head">
+        <h2>연락</h2>
+        <p>메일/깃헙/블로그 링크를 정리해두면 면접 때 매우 편합니다.</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>연락처</h3>
+          <div class="contact-list">
+            <div><span class="muted">Email</span> <strong>ooo@email.com</strong></div>
+            <div><span class="muted">Phone</span> <strong>010-0000-0000</strong></div>
+            <div><span class="muted">GitHub</span> <a href="https://github.com/yourid" target="_blank" rel="noreferrer"><strong>yourid</strong></a></div>
+            <div><span class="muted">Blog</span> <a href="https://yourblog.com" target="_blank" rel="noreferrer"><strong>yourblog.com</strong></a></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>간단 메시지</h3>
+          <form id="contactForm" class="form">
+            <input name="name" placeholder="이름" required />
+            <input name="email" placeholder="이메일" type="email" required />
+            <textarea name="message" placeholder="메시지" rows="5" required></textarea>
+            <button class="btn primary" type="submit">메시지 미리보기</button>
+            <p class="muted small" id="formHint">
+              * 실제 전송은 아니고, 입력 내용을 화면에 미리보기로 보여줍니다.
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <span class="muted">© <span id="year"></span> OOO. All rights reserved.</span>
+      </footer>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
