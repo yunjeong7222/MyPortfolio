@@ -81,11 +81,11 @@ filterBtns.forEach(btn => {
 const form = $("#contactForm");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  (function(){
-    // 모든 html요소가 로드 되면 실행되는 함수
-    emailjs.init("1uxfN5nALFN3w9Zj4");
+  // (function(){
+  //   // 모든 html요소가 로드 되면 실행되는 함수
+  //   emailjs.init("1uxfN5nALFN3w9Zj4");
 
-  })();
+  // })();
 
   const fd = new FormData(form);
   const from_name = fd.get("name");
@@ -94,22 +94,53 @@ form.addEventListener("submit", (e) => {
   const email = fd.get("email");
   const msg = fd.get("message");
 
-  // parameter 방식으로 변환
-  let params = {
-    from_name : from_name,
-    to_name : to_name,
-    name : name,
-    email : email,
-    message : msg
-  }
+//   // parameter 방식으로 변환
+//   let params = {
+//     from_name : from_name,
+//     to_name : to_name,
+//     name : name,
+//     email : email,
+//     message : msg
+//   }
 
-  console.log(params);
+//   console.log(params);
 
-  emailjs.send("service_5b99owr","template_fsgoaxi",params).then(function(res){
-    alert("이메일 발송이 완료되었습니다.")
-  });
+//   emailjs.send("service_5b99owr","template_fsgoaxi",params).then(function(res){
+//     alert("이메일 발송이 완료되었습니다.")
+//   });
 
   });
 
 // ===== Footer Year =====
 $("#year").textContent = new Date().getFullYear();
+
+
+(function(){
+        // 모든 html요소가 로드 되면 실행되는 함수
+        emailjs.init("1uxfN5nALFN3w9Zj4");
+
+      })();
+
+      sendMail=()=>{
+        let from_name = document.querySelector("input[name='name']").value;
+        let name = "장윤정";
+        let to_name = "장윤정";
+        let email = document.querySelector("input[name='email']").value;
+        let message = document.querySelector("textarea[name='message']").value;
+
+        // parameter 방식으로 변환
+        let params = {
+          from_name : from_name,
+          name : name,
+          to_name : to_name,
+          email : email,
+          message : message
+        }
+
+        console.log(params);
+      
+        emailjs.send("service_5b99owr","template_fsgoaxi",params).then(function(res){
+          alert("이메일 발송이 완료되었습니다.")
+        });
+
+      }
