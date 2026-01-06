@@ -1,3 +1,4 @@
+
 // ===== Helpers =====
 const $ = (sel, parent = document) => parent.querySelector(sel);
 const $$ = (sel, parent = document) => [...parent.querySelectorAll(sel)];
@@ -80,13 +81,35 @@ filterBtns.forEach(btn => {
 const form = $("#contactForm");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  (function(){
+    // 모든 html요소가 로드 되면 실행되는 함수
+    emailjs.init("1uxfN5nALFN3w9Zj4");
+
+  })();
+
   const fd = new FormData(form);
-  const name = fd.get("name");
+  const from_name = fd.get("name");
+  const name = "장윤정";
+  const to_name = "장윤정";
   const email = fd.get("email");
   const msg = fd.get("message");
 
-  toast(`미리보기: ${name} (${email}) - ${String(msg).slice(0, 30)}...`);
-});
+  // parameter 방식으로 변환
+  let params = {
+    from_name : from_name,
+    to_name : to_name,
+    name : name,
+    email : email,
+    message : msg
+  }
+
+  console.log(params);
+
+  emailjs.send("service_5b99owr","template_fsgoaxi",params).then(function(res){
+    alert("이메일 발송이 완료되었습니다.")
+  });
+
+  });
 
 // ===== Footer Year =====
 $("#year").textContent = new Date().getFullYear();
